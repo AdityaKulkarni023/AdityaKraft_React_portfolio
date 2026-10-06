@@ -1,7 +1,7 @@
 # AdityaKraft Portfolio
 
 The portfolio is a single-page React application built with Vite. React Router
-renders each page at a clean URL without a `.html` suffix.
+renders each page at a clean URL
 
 ## Development
 
@@ -11,14 +11,9 @@ with `npm run dev`.
 Static images, styles, scripts, and the résumé are kept in `public/` and copied
 unchanged into the production build.
 
-The production host must serve `index.html` as a fallback for unknown paths so
-direct visits and refreshes on React routes continue to work.
-
 ## Production
 
-Run `npm run build` to build the site into `dist/`. Deploy the contents of
-`dist/` to a static host configured to rewrite extensionless paths to
-`index.html`.
+Run `npm run build` to build the site into `dist/`.
 
 Run `npm run preview` to locally serve the production build.
 
