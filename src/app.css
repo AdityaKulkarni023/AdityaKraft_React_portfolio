@@ -1,0 +1,98 @@
+#page-content {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .header-area .menu-container {
+    min-height: 90px;
+    flex-wrap: nowrap;
+  }
+
+  .header-area .menu-container > .logo {
+    flex-shrink: 0;
+  }
+
+  .header-area .container .navbar-main {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    min-width: 0;
+  }
+
+  .header-area .navbar-expand-lg .navbar-info {
+    display: flex !important;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .header-area .navbar-info .nav-item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .header-area .navbar-info .nav-link {
+    min-height: 50px;
+    white-space: nowrap;
+  }
+
+  .header-area .navbar-info .nav-link .nav-icon {
+    display: inline-flex;
+    flex: 0 0 20px;
+    align-items: center;
+    justify-content: center;
+    stroke: none;
+  }
+
+  .header-area .header-right-info {
+    flex: 0 0 auto;
+    align-items: center;
+    white-space: nowrap;
+  }
+}
+
+.form-feedback {
+  max-width: 1200px;
+  margin: 12px auto;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--light-black);
+}
+
+.form-feedback.success {
+  color: #16803c;
+}
+
+.form-feedback.error {
+  color: #b42318;
+}
+
+.form-sending form button[type="submit"] {
+  opacity: 0.7;
+  cursor: wait;
+  pointer-events: none;
+}
+
+.journey-submitted #journeyForm {
+  display: none !important;
+}
+
+.journey-submitted #journeySuccess {
+  display: block !important;
+}
+
+.copy-status {
+  margin-top: 8px !important;
+  font-size: 13px;
+}
+
+@media (max-width: 767px) {
+  .form-feedback {
+    margin: 12px 16px;
+  }
+}
